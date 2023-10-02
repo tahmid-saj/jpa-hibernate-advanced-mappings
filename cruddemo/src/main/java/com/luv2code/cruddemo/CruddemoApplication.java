@@ -18,12 +18,28 @@ public class CruddemoApplication {
 	@Bean
 	public CommandLineRunner commandLineRunner(AppDAO appDAO) {
 		return runner -> {
-			createInstructor(appDAO);
+//			createInstructor(appDAO);
 //			findInstructor(appDAO);
 //			deleteInstructor(appDAO);
 //			findInstructorDetail(appDAO);
-//			deleteInstructorDetail(appDAO);
+			deleteInstructorDetail(appDAO);
+
+			createInstructorWithCourses(appDAO);
 		};
+	}
+
+	private void createInstructorWithCourses(AppDAO appDAO) {
+		// create the instructor
+		Instructor tempInstructor = new Instructor("Susan", "Public", "susan.public@luv2code.com");
+
+		// create the instructor detail
+		InstructorDetail tempInstructorDetail = new InstructorDetail(
+				"http://www.utube.com/youtube",
+				"video games"
+		);
+
+		// associate the objects
+		tempInstructor.setInstructorDetail(tempInstructorDetail);
 	}
 
 	private void deleteInstructorDetail(AppDAO appDAO) {
