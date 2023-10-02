@@ -23,6 +23,7 @@ public class CruddemoApplication {
 	}
 
 	private void createInstructor(AppDAO appDAO) {
+		/*
 		// create the instructor
 		Instructor tempInstructor = new Instructor("Chad", "Darby", "darby@luv2code.com");
 
@@ -30,6 +31,16 @@ public class CruddemoApplication {
 		InstructorDetail tempInstructorDetail = new InstructorDetail(
 				"http://www.luv2code.com/youtube",
 				"luv 2 code"
+		);
+		*/
+
+		// create the instructor
+		Instructor tempInstructor = new Instructor("Madhu", "Patel", "madhu@luv2code.com");
+
+		// create the instructor detail
+		InstructorDetail tempInstructorDetail = new InstructorDetail(
+				"http://www.luv2code.com/youtube",
+				"guitar"
 		);
 
 		// associate the objects
