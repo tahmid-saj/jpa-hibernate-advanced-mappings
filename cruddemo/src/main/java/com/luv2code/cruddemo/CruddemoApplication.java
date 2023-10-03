@@ -37,8 +37,9 @@ public class CruddemoApplication {
 //			deleteCourse(appDAO);
 //			createCourseAndReviews(appDAO);
 //			retrieveCourseAndReviews(appDAO);
+//			deleteCourseAndReviews(appDAO);
 
-			deleteCourseAndReviews(appDAO);
+			
 		};
 	}
 
