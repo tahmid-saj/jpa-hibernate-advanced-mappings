@@ -39,7 +39,7 @@ public class CruddemoApplication {
 //			retrieveCourseAndReviews(appDAO);
 //			deleteCourseAndReviews(appDAO);
 
-			
+
 		};
 	}
 
